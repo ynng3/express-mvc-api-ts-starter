@@ -1,10 +1,10 @@
-import express, { Request, Response, NextFunction } from "express";
+import express from "express";
 import bodyParser from "body-parser";
 import morgan from "morgan";
 import helmet from "helmet";
 import cors from "cors";
 import dotenv from "dotenv";
-import * as responseError from "./middlewares/responseMiddleware";
+import * as responseMiddleware from "./middlewares/responseMiddleware";
 import example from "./routes/example";
 
 const app = express();
@@ -19,7 +19,7 @@ app.use(express.json());
 app.use(bodyParser.json());
 app.use("/example", example);
 
-app.use(responseError.notFound);
-app.use(responseError.errorHandler);
+app.use(responseMiddleware.notFound);
+app.use(responseMiddleware.errorHandler);
 
 export default app;
