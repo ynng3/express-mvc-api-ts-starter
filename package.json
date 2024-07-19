@@ -1,6 +1,6 @@
 {
   "name": "express-mvc-api-ts-starter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "디자인 패턴을 Model, Controller, Routes로 분리한 형태의 Express.js의 Typescript REST API 스타터 킷",
   "main": "src/index.ts",
   "scripts": {
@@ -33,7 +33,7 @@
     "@types/node": "^20.14.10",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
-    "eslint": "^9.6.0",
+    "eslint": "^8.57.0",
     "eslint-config-airbnb-typescript": "^17.1.0",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.0",
