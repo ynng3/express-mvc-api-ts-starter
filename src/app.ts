@@ -5,7 +5,7 @@ import helmet from "helmet";
 import cors from "cors";
 import dotenv from "dotenv";
 import * as responseMiddleware from "./middlewares/responseMiddleware";
-import example from "./routes/example";
+import example from "./routes/userRoute";
 
 const app = express();
 

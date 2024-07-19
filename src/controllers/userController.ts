@@ -6,7 +6,7 @@ import {
   updateUser,
   deleteUser,
   User,
-} from "../models/example";
+} from "../models/userModel";
 
 export const getUsers = (req: Request, res: Response): void => {
   const users = getAllUsers();
